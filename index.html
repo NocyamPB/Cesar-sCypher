@@ -5,21 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tradutor Cifra de Cesar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="public/css/master.css">
     <script src="main.js"></script>
 </head>
 <body>
+    <header>
+        <div>
+            <h1>Tradutor de Criptografias</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <img src="public/images/cifraCesar.png" alt="Icone da Cifra de Cesar">
+                    <p>Cifra de Cesar</p>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <p>Maycon Santos Barbieri</p>
+        </div>
+    </header>
+
     <section>
-        <form action="">
-            <label for="language">Mensagem:</label>
-            <input name="language" type="text">
-            <label for="cesar">Criptografia:</label>
-            <input name="cesar" type="text">
-            <label for="password">Senha:</label>     
-            <input name="password" type="number">
-            <input type="button" value="Traduzir">
-        </form>
+        <div>
+            <div>
+                <h1>Cifra de Cesar</h1>
+                <p></p>
+            </div>
+            <div>
+                <img src="public/images/cifraCesar.png" alt="Cifra de Cesar">
+            </div>
+        </div>
+
+        <div>
+            <form action="submit">
+                <div class="form-textos">
+                    <div>
+                        <label for="mensagem">Mensagem</label>
+                        <label for="senha">Senha</label>
+                        <input type="number" name="senha" id="">
+                        <input type="textarea" name="mensagem" id="">
+                    </div>
+                    <div>
+                        <label for="resultado">Resultado</label>
+                        <input type="textarea" name="resultado" id="">
+                    </div>
+                </div>
+                <div class="form-botoes">
+                    <input type="button" value="Criptografar">
+                    <input type="button" value="Descriptografar">
+                </div>
+            </form>
+        </div>
     </section>
-    
 </body>
 </html>
