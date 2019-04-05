@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="public/css/master.css">
     <link rel="stylesheet" href="public/css/cesar.css">
-    <script src="main.js"></script>
+    <script src="/scripts/cesarTranslator.js"></script>
 </head>
 <body>
     <header>
@@ -31,30 +31,38 @@
         <div class="historia">
             <div class="textos-historia">
                 <h1>Cifra de Cesar</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit sit eaque temporibus molestias? Corporis, deserunt. Totam debitis rerum quod odit? Dolore eos consequatur similique iure, pariatur reiciendis minima laboriosam labore.</p>
+                <p>Júlio César, imperador romano de 100 a.C. a 44 a.C., utilizava um código para proteger as mensagens enviadas a seus generais. Assim, se a mensagem caísse em mãos inimigas, a informação não poderia ser compreendida. Cada letra do alfabeto era substituída pela letra três posições à frente, ou seja, o “A” era substituído pelo “D”, o “B” pelo “E”, o “C” pelo “F”, e assim sucessivamente. Qualquer código que tenha esse padrão é considerado uma Cifra de César, também conhecida como Código de César.</p>
             </div>
             <div class="imagens-historia">
                 <img src="public/images/cifraCesar.png" alt="Cifra de Cesar">
             </div>
         </div>
 
-        <div>
+        <div class="tradutor">
             <form action="submit">
                 <div class="form-textos">
-                    <div>
-                        <label for="mensagem">Mensagem</label>
-                        <label for="senha">Senha</label>
-                        <input type="number" name="senha" id="">
-                        <input type="textarea" name="mensagem" id="">
+                    <div class="form-input">
+                        <div>
+                            <label class="input-textobase" for="mensagem">Mensagem</label>
+                            <div class="form-senha">
+                                <label class="texto-senha" for="senha">Chave</label>
+                                <input class="input-senha" type="number" value="1" min="1" max="25" name="senha" id="">
+                            </div>
+                        </div>
+                        <textarea class="input-texto" name="mensagem" id=""></textarea>
+                        <div id="botao-criptografar">
+                            <input class="botao" type="button" value="Criptografar">
+                        </div>
                     </div>
-                    <div>
-                        <label for="resultado">Resultado</label>
-                        <input type="textarea" name="resultado" id="">
+                    <div class="form-input">
+                        <div>
+                            <label class="input-textobase" for="resultado">Resultado</label>
+                        </div>
+                        <textarea class="input-texto" name="resultado" id=""></textarea>
+                        <div>
+                            <input class="botao" type="button" value="Descriptografar">
+                        </div>
                     </div>
-                </div>
-                <div class="form-botoes">
-                    <input type="button" value="Criptografar">
-                    <input type="button" value="Descriptografar">
                 </div>
             </form>
         </div>

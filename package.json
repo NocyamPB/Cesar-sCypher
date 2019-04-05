@@ -1,0 +1,25 @@
+{
+  "name": "cripto-translater",
+  "version": "1.0.0",
+  "description": "A translator of some cryptography like Cesar cipher. Develop as an activity of the IFMS's computer technician course.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NocyamPB/Cesar-sCypher.git"
+  },
+  "author": "Maycon Santos Barbieri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NocyamPB/Cesar-sCypher/issues"
+  },
+  "homepage": "https://github.com/NocyamPB/Cesar-sCypher#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "node": "^11.12.0"
+  }
+}
