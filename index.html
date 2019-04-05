@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="public/css/master.css">
     <link rel="stylesheet" href="public/css/cesar.css">
-    <script src="/scripts/cesarTranslator.js"></script>
+    <script src="./scripts/cesarTranslator.js"></script>
 </head>
 <body>
     <header>
@@ -46,21 +46,21 @@
                             <label class="input-textobase" for="mensagem">Mensagem</label>
                             <div class="form-senha">
                                 <label class="texto-senha" for="senha">Chave</label>
-                                <input class="input-senha" type="number" value="1" min="1" max="25" name="senha" id="">
+                                <input class="input-senha" type="number" value="1" min="1" max="25" name="senha" id="chave">
                             </div>
                         </div>
-                        <textarea class="input-texto" name="mensagem" id=""></textarea>
+                        <textarea class="input-texto" name="mensagem" id="txt-mensagem"></textarea>
                         <div id="botao-criptografar">
-                            <input class="botao" type="button" value="Criptografar">
+                            <input class="botao" type="button" onclick="criptografar()" value="Criptografar">
                         </div>
                     </div>
                     <div class="form-input">
                         <div>
                             <label class="input-textobase" for="resultado">Resultado</label>
                         </div>
-                        <textarea class="input-texto" name="resultado" id=""></textarea>
+                        <textarea class="input-texto" name="resultado" id="txt-resultado"></textarea>
                         <div>
-                            <input class="botao" type="button" value="Descriptografar">
+                            <input class="botao" type="button" onclick="descriptografar()" value="Descriptografar">
                         </div>
                     </div>
                 </div>
