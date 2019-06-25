@@ -7,8 +7,13 @@ function criptografar(){
     var resultado = "";
     for (let i = 0; i <= mensagem.length; i++) {
         for (let j = 0; j <= chave.length; j++) {
-            chaveCompleta += chave.charAt(j);
-            i++;
+            if(verificarLetra(mensagem.charAt(i))){
+                chaveCompleta += " ";
+                i++;
+            }else{
+                chaveCompleta += chave.charAt(j);
+                i++;
+            }
         }
     };
     for(let i = 0; i <= mensagem.length; i++){
@@ -49,8 +54,13 @@ function descriptografar(){
     var resultado = "";
     for (let i = 0; i <= mensagem.length; i++) {
         for (let j = 0; j <= chave.length; j++) {
-            chaveCompleta += chave.charAt(j);
-            i++;
+            if(verificarLetra(mensagem.charAt(i))){
+                chaveCompleta += " ";
+                i++;
+            }else{
+                chaveCompleta += chave.charAt(j);
+                i++;
+            }
         }
     };
     for(let i = 0; i <= mensagem.length; i++){
