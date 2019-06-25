@@ -100,8 +100,13 @@ input{
     margin: 0 auto;
 }
 
-.input-senha{
+.input-senha-numero{
     width: 60px;
+    height: 30px;
+}
+
+.input-senha-palavra{
+    width: 150px;
     height: 30px;
 }
 

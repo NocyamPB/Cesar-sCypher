@@ -6,7 +6,7 @@
     <title>Tradutor Cifra de Vigenere</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../public/css/page.css">
-    <script src="../../public/scripts/cesarTranslator.js"></script>
+    <script src="../../public/scripts/vigenereTranslator.js"></script>
 </head>
 <body>
     <% include menu %>
@@ -30,7 +30,7 @@
                             <label class="input-textobase" for="mensagem">Mensagem</label>
                             <div class="form-senha">
                                 <label class="texto-senha" for="senha">Chave</label>
-                                <input class="input-senha" type="number" value="1" min="1" max="25" name="senha" id="chave">
+                                <input class="input-senha-palavra" type="text" name="senha" id="chave">
                             </div>
                         </div>
                         <textarea class="input-texto" name="mensagem" id="txt-mensagem"></textarea>
