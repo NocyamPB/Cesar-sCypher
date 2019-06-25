@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tradutor Cifra de Vigenere</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../public/css/page.css">
+    <script src="../../public/scripts/cesarTranslator.js"></script>
+</head>
+<body>
+    <% include menu %>
+
+    <section>
+        <div class="historia">
+            <div class="textos-historia">
+                <h1>Cifra de Vigenère</h1>
+                <p>A cifra de Vigenère é um método de criptografia que usa uma série de diferentes cifras de César baseadas em letras de uma senha. Trata-se de uma versão simplificada de uma mais geral cifra de substituição polialfabética, inventada por Leon Battista Alberti cerca de 1465.</p>
+            </div>
+            <div class="imagens-historia">
+                <img src="../../public/images/cifraVigenere.png" alt="Cifra de Vigenere">
+            </div>
+        </div>
+
+        <div class="tradutor">
+            <form action="submit">
+                <div class="form-textos">
+                    <div class="form-input">
+                        <div>
+                            <label class="input-textobase" for="mensagem">Mensagem</label>
+                            <div class="form-senha">
+                                <label class="texto-senha" for="senha">Chave</label>
+                                <input class="input-senha" type="number" value="1" min="1" max="25" name="senha" id="chave">
+                            </div>
+                        </div>
+                        <textarea class="input-texto" name="mensagem" id="txt-mensagem"></textarea>
+                        <div id="botao-criptografar">
+                            <input class="botao" type="button" onclick="criptografar()" value="Criptografar">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div>
+                            <label class="input-textobase" for="resultado">Resultado</label>
+                        </div>
+                        <textarea class="input-texto" name="resultado" id="txt-resultado"></textarea>
+                        <div>
+                            <input class="botao" type="button" onclick="descriptografar()" value="Descriptografar">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

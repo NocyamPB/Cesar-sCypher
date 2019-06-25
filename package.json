@@ -2,10 +2,10 @@
   "name": "cripto-translater",
   "version": "1.0.0",
   "description": "A translator of some cryptography like Cesar cipher. Develop as an activity of the IFMS's computer technician course.",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "node": "^11.12.0"
+    "node": "^11.12.0",
+    "nodemon": "^1.19.1"
   }
 }

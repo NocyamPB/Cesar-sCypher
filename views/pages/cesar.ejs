@@ -5,36 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tradutor Cifra de Cesar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/master.css">
-    <link rel="stylesheet" href="../css/cesar.css">
-    <script src="../../scripts/cesarTranslator.js"></script>
+    <link rel="stylesheet" href="../../public/css/page.css">
+    <script src="../../public/scripts/cesarTranslator.js"></script>
 </head>
 <body>
-    <header>
-        <div class="titulo-site">
-            <h1>Tradutor <br> de <br> Criptografias</h1>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <img class="imagem-navmenu" src="../images/cifraCesar.png" alt="Icone da Cifra de Cesar">
-                    <p class="texto-navitem">Cifra de Cesar</p>
-                </li>
-            </ul>
-        </nav>
-        <div class="rodape">
-            <p>Maycon Santos Barbieri</p>
-        </div>
-    </header>
 
-    <section>
+    <% include menu %>
+
+    <section class="info">
         <div class="historia">
             <div class="textos-historia">
                 <h1>Cifra de Cesar</h1>
                 <p>Júlio César, imperador romano de 100 a.C. a 44 a.C., utilizava um código para proteger as mensagens enviadas a seus generais. Assim, se a mensagem caísse em mãos inimigas, a informação não poderia ser compreendida. Cada letra do alfabeto era substituída pela letra três posições à frente, ou seja, o “A” era substituído pelo “D”, o “B” pelo “E”, o “C” pelo “F”, e assim sucessivamente. Qualquer código que tenha esse padrão é considerado uma Cifra de César, também conhecida como Código de César.</p>
             </div>
             <div class="imagens-historia">
-                <img src="../images/cifraCesar.png" alt="Cifra de Cesar">
+                <img src="../../public/images/cifraCesar.png" alt="Cifra de Cesar">
             </div>
         </div>
 
