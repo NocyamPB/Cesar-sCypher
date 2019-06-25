@@ -2,7 +2,7 @@ const alfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm
 
 function criptografar(){
     var mensagem = document.querySelector('#txt-mensagem').value.toLowerCase();
-    var chave = document.querySelector('#chave').value;
+    var chave = document.querySelector('#chave').value.toLowerCase();
     var chaveCompleta = "";
     var resultado = "";
     for (let i = 0; i <= mensagem.length; i++) {
@@ -44,7 +44,7 @@ function verificarLetra(letra){
 
 function descriptografar(){
     var mensagem = document.querySelector('#txt-mensagem').value.toLowerCase();
-    var chave = document.querySelector('#chave').value;
+    var chave = document.querySelector('#chave').value.toLowerCase();
     var chaveCompleta = "";
     var resultado = "";
     for (let i = 0; i <= mensagem.length; i++) {
