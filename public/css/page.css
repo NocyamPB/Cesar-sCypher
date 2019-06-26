@@ -5,7 +5,7 @@
 
 .historia{
     flex: 1;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     background-color: #D9D9D9;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -35,7 +35,7 @@
 
 .imagens-historia{
     margin: 0 100px 0 70px;
-    padding: 5% 0 5% 0;
+    padding: 2.5% 0 2.5% 0;
     flex: 0.2;
 }
 
@@ -46,7 +46,7 @@
 
 .tradutor{
     flex: 1;
-    height: 75vh;
+    height: 65vh;
     background-color: #AFAFAF;
 }
 

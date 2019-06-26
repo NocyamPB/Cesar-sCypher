@@ -1,5 +1,20 @@
 const alfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
+function verificarLetra(letra){
+    let i = 0;
+    while(true){
+        if(i<alfabeto.length){
+            if(alfabeto[i] == letra){
+                return i;
+            }else{
+                i++;
+            }
+        }else{
+            return null;
+        }
+    }
+}
+
 function criptografar(){
     var mensagem = document.querySelector('#txt-mensagem').value.toLowerCase();
     var chave = parseInt(document.querySelector('#chave').value);
@@ -17,21 +32,6 @@ function criptografar(){
         }
     }
     document.querySelector('#txt-resultado').innerHTML = resultado;
-}
-
-function verificarLetra(letra){
-    var i = 0;
-    while(true){
-        if(i<alfabeto.length){
-            if(alfabeto[i] == letra){
-                return i;
-            }else{
-                i++;
-            }
-        }else{
-            return null;
-        }
-    }
 }
 
 function descriptografar(){
