@@ -19,7 +19,7 @@
   "homepage": "https://github.com/NocyamPB/Cesar-sCypher#readme",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "node": "^11.12.0",
     "nodemon": "^1.19.1"
   }
